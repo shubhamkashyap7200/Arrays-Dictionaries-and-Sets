@@ -51,3 +51,16 @@ var employeesDictionary = [
 employeesDictionary["Arthur"] // Key access method
 employeesDictionary["Sadie"] // Key access method
 employeesDictionary["Abigail"] // Key access method
+
+employeesDictionary.updateValue("Abigail", forKey: "Cook")
+employeesDictionary
+
+
+// Backup value, default value
+let results: [String : Double] = [
+    "english": 100,
+    "french": 85,
+    "geography": 75
+]
+
+let historyResult = results["history", default: 0]
